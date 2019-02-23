@@ -1,0 +1,8 @@
+<!--pages/page_1/page.wxml-->
+<text>pages/page_1/page.wxml</text>
+
+
+<view>
+
+<text>page_1</text>
+</view>
