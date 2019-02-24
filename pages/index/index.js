@@ -112,6 +112,12 @@ Page({
     this.setData({
       duration: e.detail.value
     })
+  },
+  // 页面跳转
+  toLogs:function(){
+      wx.navigateTo({
+        url: '/pages/logs/logs',
+      })
   }
 })
 

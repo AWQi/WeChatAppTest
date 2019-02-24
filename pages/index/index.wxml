@@ -51,6 +51,9 @@
 interval
 <slider bindchange="durationChange" show-value min="1000" max="10000" /> -->
 
+<!-- 绑定事件页面跳转 -->
+<button type='primary' bindtap='toLogs'>页面跳转至日志页 </button>
+
 <!-- 循环 读取列表-->
 <view class='content'>
   <view class='pro' wx:for="{{proList}}" wx:key="property">
