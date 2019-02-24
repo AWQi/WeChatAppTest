@@ -56,9 +56,9 @@ interval
 
 <!-- 循环 读取列表-->
 <view class='content'>
-  <view class='pro active' wx:for="{{proList}}" wx:key="property" >
+  <view class="{{index==idx?'pro active':'pro'}}" data-index="{{index}}" bindtap='select' wx:for="{{proList}}" wx:key="property" >
      <image src="/images/b.jpg" />
-     <view class='proName'>{{item.proName}}</view>
+     <view class='proName'>{{item.proName}}{{idx}}</view>
   </view>
 
 </view>
@@ -71,22 +71,23 @@ interval
 
 <view>选择:</view>
 <view class='iContent'>
-  <view class='i active' >
+  <view class='i' bindtap='select'>
      <image src="/images/b.jpg" />
      <view class='proName'>AAA</view>
   </view>
-   <view class='i' >
+   <view class='i' bindtap='select'>
      <image src="/images/b.jpg" />
      <view class='proName'>AAA</view>
   </view>
-   <view class='i' >
+  <view class='i' bindtap='select'>
      <image src="/images/b.jpg" />
      <view class='proName'>AAA</view>
   </view>
-   <view class='i' >
+  <view class='i' bindtap='select'>
      <image src="/images/b.jpg" />
      <view class='proName'>AAA</view>
-  </view> <view class='i' >
+  </view>
+  <view class='i' bindtap='select'>
      <image src="/images/b.jpg" />
      <view class='proName'>AAA</view>
   </view>

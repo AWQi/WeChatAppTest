@@ -81,7 +81,9 @@ Page({
       proName: 'BBB'
     }, {
       proName: 'AAA'
-    }]
+    }],
+
+    idx:0
     
   },
   changeIndicatorDots(e) {
@@ -110,8 +112,19 @@ Page({
         url: '/pages/logs/logs',
       })
   },
+  // 点击选择效果
+  select: function (event){
+    console.log("选择");
+    console.log(event);
+    let index = event.currentTarget.dataset.index; 
+    // console.log(index);
+    this.setData({
+      idx:index
+    });
+   
+  },
   //响应点击事件，发送网络请求
-  HttpReq:function(){
+  HttpReq:function(event, ownerInstance){
       wx.request({
         url: 'https://127.0.0.1:8080',
         data:{
@@ -201,4 +214,4 @@ Page({
 //       title: options.title
 //     })
 //   }
-// })
+// }) 

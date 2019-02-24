@@ -15,8 +15,11 @@ swiper,swiper image{
   margin-bottom: 20rpx;
   background: #36a4e4;
   box-shadow: 0rpx 10rpx 15rpx cyan;/*卡片添加阴影*/
-  border: 3rpx solid #ec1c1c;
+  /* border: 3rpx solid #ec1c1c; */
 
+}
+.pro.active{
+    border: 3rpx solid #ec1c1c;
 }
 .pro image{
   width: 100%;
