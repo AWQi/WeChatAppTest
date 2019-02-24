@@ -73,7 +73,25 @@ Page({
     circular:true,
     // vertical:true
     displayMultipleItems: 1,
-   
+
+//  列表数据 数组
+    proList: [{
+      proName: 'AAA'
+    }, {
+      proName: 'BBB'
+    }, {
+      proName: 'AAA'
+    }, {
+      proName: 'BBB'
+    }, {
+      proName: 'AAA'
+    }, {
+      proName: 'BBB'
+    }, {
+      proName: 'AAA'
+    }, {
+      proName: 'BBB'
+    }]
   },
   changeIndicatorDots(e) {
     this.setData({

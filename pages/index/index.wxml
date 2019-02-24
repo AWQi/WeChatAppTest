@@ -51,40 +51,13 @@
 interval
 <slider bindchange="durationChange" show-value min="1000" max="10000" /> -->
 
-
+<!-- 循环 读取列表-->
 <view class='content'>
-  <view class='pro'>
+  <view class='pro' wx:for="{{proList}}" wx:key="property">
      <image src="/images/b.jpg" />
-     <view class='proName'>AAAAA</view>
+     <view class='proName'>{{item.proName}}</view>
   </view>
-  <view class='pro'>
-     <image src="/images/b.jpg" />
-     <view class='proName'>AAAAA</view>
-  </view>
-  <view class='pro'>
-     <image src="/images/b.jpg" />
-     <view class='proName'>AAAAA</view>
-  </view>
-   <view class='pro'>
-     <image src="/images/b.jpg" />
-     <view class='proName'>AAAAA</view>
-  </view>
-   <view class='pro'>
-     <image src="/images/b.jpg" />
-     <view class='proName'>AAAAA</view>
-  </view>
-   <view class='pro'>
-     <image src="/images/b.jpg" />
-     <view class='proName'>AAAAA</view>
-  </view>
-   <!-- <view class='pro'>
-     <image src="/images/b.jpg" />
-     <view class='proName'>AAAAA</view>
-  </view>
- <view class='pro'>
-     <image src="/images/b.jpg" />
-     <view class='proName'>AAAAA</view>
-  </view> -->
+
 </view>
 
   
