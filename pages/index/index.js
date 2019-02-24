@@ -109,6 +109,26 @@ Page({
       wx.navigateTo({
         url: '/pages/logs/logs',
       })
+  },
+  //响应点击事件，发送网络请求
+  HttpReq:function(){
+      wx.request({
+        url: 'https://127.0.0.1:8080',
+        data:{
+
+        },
+        header:{
+          'content-type':'text/html'// 默认为json
+        },
+        success(res){
+          console.log("请求成功");
+        },
+        fail(res){
+          console.log("请求失败")
+          console.log(res);
+        }
+
+      })
   }
 })
 

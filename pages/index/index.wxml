@@ -117,8 +117,8 @@ interval
 </view>
 
 
-<view class="bottom">
-  底部栏
+<view class="bottom" bindtap='HttpReq'>
+  底部栏 调试网络请求
 </view>
 
 
