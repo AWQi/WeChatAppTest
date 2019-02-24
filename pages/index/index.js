@@ -81,17 +81,8 @@ Page({
       proName: 'BBB'
     }, {
       proName: 'AAA'
-    }, {
-      proName: 'BBB'
-    }, {
-      proName: 'AAA'
-    }, {
-      proName: 'BBB'
-    }, {
-      proName: 'AAA'
-    }, {
-      proName: 'BBB'
     }]
+    
   },
   changeIndicatorDots(e) {
     this.setData({
