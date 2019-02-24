@@ -94,9 +94,31 @@ interval
 
 
 
+<!-- 文字左右排列 -->
+<view class='textLine'>
+  <view class='line'>
+   <view class='left'>line1 left</view>
+  <view class='right'>line1 right</view>
+  </view>
+
+  <view class='line'>
+   <view class='left'>line2 left</view>
+  <view class='right'>line2 right</view>
+  </view>
+
+   <view class='line line3'>
+   <view class='left'>line3 left</view>
+  <view class='right'>
+    <view> 3_1</view>
+    <view> 3_2</view>
+    <view> 3_3</view>
+  </view>
+  </view>
+</view>
+
+
 <view class="bottom">
   底部栏
 </view>
 
-  
 
