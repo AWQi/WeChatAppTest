@@ -1,15 +1,24 @@
 /**index.wxss**/
-swiper,swiper_image{
+
+page{
+  background: #817b7b
+}
+swiper,swiper image{
   width: 100%;
-  height: 500rpx;
+  height: 1000rpx;
 }
 
 .pro{
   width:30%;
+  border-radius: 10rpx;
+  margin: 5rpx;
+  background: #36a4e4;
+  
 }
 .pro image{
   width: 100%;
   height: 200rpx;
+  border-radius: 
 }
 .content{
   margin-top: 20rpx;
