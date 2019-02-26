@@ -83,7 +83,10 @@ Page({
       proName: 'AAA'
     }],
 
-    idx:0
+    idx:0,
+    time:0,
+    intervalId:0,
+    intervalList:[]
     
   },
   changeIndicatorDots(e) {
@@ -112,11 +115,44 @@ Page({
         url: '/pages/logs/logs',
       })
   },
+//定时效果 不断触发callback 
+  startInterval:function(){
+    if(this.data.intervalId!=0)return;
+    let thisPage = this;
+    var n = setInterval(function (){
+      var thisTime =thisPage.data.time +1;
+      if (thisTime>30){
+        thisTime=0;
+      }
+      thisPage.setData({
+          time:thisTime
+      });
+      console.log(thisTime);
+    }, 100);
+    this.setData({
+      intervalId:n      
+    });
+    var intervalList = this.data.intervalList;
+    intervalList.push(n);
+    console.log(n);
+    console.log(intervalList)
+  },
+  //清除定时
+  clearInterval:function(){
+      clearInterval(this.data.intervalId);
+
+      this.setData({
+        time:0,
+        intervalId:0
+      });
+  },
   // 点击选择效果
   select: function (event){
     console.log("选择");
     console.log(event);
     let index = event.currentTarget.dataset.index; 
+    console.log(event.currentTarget);
+    event.currentTarget.id;
     // console.log(index);
     this.setData({
       idx:index
