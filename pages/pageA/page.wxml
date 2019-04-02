@@ -5,4 +5,10 @@
 <view>
 
 <text>page_1</text>
+<text>province: {{province}}</text>
+<text>city:{{city}}</text>
+<view>district: {{district}}</view>
+<text>latitude: {{latitude}}</text>
+<text>longitude: {{longitude}}</text>
+
 </view>

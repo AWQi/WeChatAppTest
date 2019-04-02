@@ -60,10 +60,14 @@ Page({
       // 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       // 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
       // 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
-      'https://img01.sogoucdn.com/net/a/04/link?url=http%3A%2F%2Fimg02.sogoucdn.com%2Fapp%2Fa%2F100520024%2Fad4741145c4dfd2c0f7c8afed8b1e029&appid=122',
-      'https://img01.sogoucdn.com/net/a/04/link?url=http%3A%2F%2Fimg02.sogoucdn.com%2Fapp%2Fa%2F100520024%2Fad4741145c4dfd2c0f7c8afed8b1e029&appid=122',
-      'https://img01.sogoucdn.com/net/a/04/link?url=http%3A%2F%2Fimg02.sogoucdn.com%2Fapp%2Fa%2F100520024%2Fad4741145c4dfd2c0f7c8afed8b1e029&appid=122'
       
+      // 'https://img01.sogoucdn.com/net/a/04/link?url=http%3A%2F%2Fimg02.sogoucdn.com%2Fapp%2Fa%2F100520024%2Fad4741145c4dfd2c0f7c8afed8b1e029&appid=122',
+      // 'https://img01.sogoucdn.com/net/a/04/link?url=http%3A%2F%2Fimg02.sogoucdn.com%2Fapp%2Fa%2F100520024%2Fad4741145c4dfd2c0f7c8afed8b1e029&appid=122',
+      // 'https://img01.sogoucdn.com/net/a/04/link?url=http%3A%2F%2Fimg02.sogoucdn.com%2Fapp%2Fa%2F100520024%2Fad4741145c4dfd2c0f7c8afed8b1e029&appid=122'
+ 
+      'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2735633715,2749454924&fm=27&gp=0.jpg',
+      'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2735633715,2749454924&fm=27&gp=0.jpg',
+      'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2735633715,2749454924&fm=27&gp=0.jpg'
     ],
     indicatorDots: true,
     autoplay: false,
@@ -162,7 +166,8 @@ Page({
   //响应点击事件，发送网络请求
   HttpReq:function(event, ownerInstance){
       wx.request({
-        url: 'https://127.0.0.1:8080',
+        url: 'http://file.wang.com',
+        // url: 'https://192.168.225.135',
         data:{
 
         },
@@ -171,6 +176,7 @@ Page({
         },
         success(res){
           console.log("请求成功");
+          console.log(res);
         },
         fail(res){
           console.log("请求失败")
